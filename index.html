@@ -11,14 +11,9 @@
     <script type="text/x-template" id="my-checkbox-template">
       <h1>{{title}}</h1>
     </script>
-    
-    <script>
-      const appHeader = {
-        template: '#my-checkbox-template',
-        props: {
-          title: String
-        }
-      };
+
+    <script type="module">
+      import { appHeader } from './appHeader/appHeader.component.js';
 
       const app = {
         el: "#app",
