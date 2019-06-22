@@ -1,18 +1,35 @@
 <html>
   <body>
     <div id="app">
-      {{ text }}
+      <app-header title="Awesome Page" />
+      {{ text }}  
     </div>
-    
+    <p>Heyho</p>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script type="text/x-template" id="my-checkbox-template">
+      <h1>{{title}}</h1>
+    </script>
+    
     <script>
+      const appHeader = {
+        template: '#my-checkbox-template',
+        props: {
+          title: String
+        }
+      };
+
       const app = {
         el: "#app",
         data: {
           text: "Hello World"
+        },
+        components: {
+          appHeader
         }
       };
-      
+
       const vm = new Vue(app);
     </script>
   </body>
