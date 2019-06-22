@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <div id="app">
+      {{ text }}
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      const app = {
+        el: "#app",
+        data: {
+          text: "Hello World"
+        }
+      };
+      
+      const vm = new Vue(app);
+    </script>
+  </body>
+</html>
