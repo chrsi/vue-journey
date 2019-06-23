@@ -11,20 +11,6 @@
       <h1>{{title}}</h1>
     </script>
 
-    <script type="module">
-      import { appHeader } from './appHeader/appHeader.component.js';
-
-      const app = {
-        el: "#app",
-        data: {
-          text: "Hello World"
-        },
-        components: {
-          appHeader
-        }
-      };
-
-      const vm = new Vue(app);
-    </script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>
