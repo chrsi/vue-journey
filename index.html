@@ -1,19 +1,15 @@
 <html>
   <body>
     <div id="app">
-      <app-header title="Awesome Page" />
+      <app-header title="Awesome Page"></app-header>
       {{ text }}  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     
-    <script type="text/x-template" id="my-checkbox-template">
-      <h1>{{title}}</h1>
-    </script>
-    
     <script>
       const appHeader = {
-        template: '#my-checkbox-template',
+        template: '<h1>{{title}}</h1>',
         props: {
           title: String
         }
