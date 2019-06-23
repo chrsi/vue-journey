@@ -1,4 +1,4 @@
-import { appHeader } from './appHeader.component.js';
+import appHeader from './appHeader.vue';
 
 const app = {
   el: "#app",
