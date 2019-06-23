@@ -1,5 +1,5 @@
 export const appHeader = {
-  template: '#my-checkbox-template',
+  template: '#my-app-header-template',
   props: {
     title: String
   }

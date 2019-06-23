@@ -7,24 +7,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     
-    <script type="text/x-template" id="my-checkbox-template">
+    <script type="text/x-template" id="my-app-header-template">
       <h1>{{title}}</h1>
     </script>
 
-    <script type="module">
-      import { appHeader } from './appHeader/appHeader.component.js';
-
-      const app = {
-        el: "#app",
-        data: {
-          text: "Hello World"
-        },
-        components: {
-          appHeader
-        }
-      };
-
-      const vm = new Vue(app);
-    </script>
+<script type="module">
+  import { appHeader } from './appHeader/appHeader.component.js'
+  const app = {
+    el: "#app",
+    data: {
+      text: "Hello World"
+    },
+    components: {
+      appHeader
+    }
+  }
+  const vm = new Vue(app);
+</script>
   </body>
 </html>
