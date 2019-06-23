@@ -1,0 +1,13 @@
+{
+  "name": "vue-js-journey",
+  "version": "1.0.0",
+  "description": "A journey from a small vue.js page to a enterprise ready application.",
+  "main": "index.html",
+  "dependencies": {
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.5",
+    "webpack": "^4.35.0"
+  },
+  "devDependencies": {}
+}
